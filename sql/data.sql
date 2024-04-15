@@ -1,0 +1,60 @@
+
+USE `ds_api_gateway`;
+
+INSERT INTO `whitelist` SELECT 1,'ds_task','/csrf','admin','2022-11-17 07:17:42','admin','2022-12-08 16:18:55' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=1);
+INSERT INTO `whitelist` SELECT 2,'ds_task','/webjars/**','admin','2022-11-17 07:18:46','admin','2022-12-08 16:18:55' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=2);
+INSERT INTO `whitelist` SELECT 3,'ds_task','/static/**','admin','2022-11-17 07:18:47','admin','2022-12-08 16:18:56' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=3);
+INSERT INTO `whitelist` SELECT 4,'ds_task','/error/**','admin','2022-11-17 07:18:48','admin','2022-12-08 16:18:56' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=4);
+INSERT INTO `whitelist` SELECT 5,'ds_task','/ds_task/logout','admin','2022-11-17 07:18:49','admin','2022-12-08 17:51:46' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=5);
+INSERT INTO `whitelist` SELECT 6,'ds_task','/code','admin','2022-11-17 16:35:16','admin','2022-12-08 16:18:56' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=6);
+INSERT INTO `whitelist` SELECT 7,'ds_task','/','admin','2022-11-17 16:36:25','admin','2022-12-08 16:18:57' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=7);
+INSERT INTO `whitelist` SELECT 8,'ds_task','/inf-druid/**','admin','2022-11-17 16:36:26','admin','2022-12-08 16:18:57' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=8);
+INSERT INTO `whitelist` SELECT 9,'ds_task','/druid/**','admin','2022-11-17 16:36:27','admin','2022-12-08 16:18:57' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=9);
+INSERT INTO `whitelist` SELECT 10,'ds_task','/index','admin','2022-11-18 07:29:54','admin','2022-12-08 16:18:58' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=10);
+INSERT INTO `whitelist` SELECT 11,'ds_task','/index.html','admin','2022-11-18 07:29:55','admin','2022-12-08 16:18:58' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=11);
+INSERT INTO `whitelist` SELECT 12,'ds_task','/version','admin','2022-11-18 07:29:56','admin','2022-12-08 16:18:58' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=12);
+INSERT INTO `whitelist` SELECT 13,'ds_task','/favicon.ico','admin','2022-11-18 07:30:36','admin','2022-12-09 00:15:57' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=13);
+INSERT INTO `whitelist` SELECT 14,'ds_task','/ds_task/cost/excel','admin','2022-11-18 07:30:37','admin','2022-12-08 16:18:59' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=14);
+INSERT INTO `whitelist` SELECT 15,'ds_task','/swagger-resources/**','admin','2022-11-18 08:03:18','admin','2022-12-08 16:18:59' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=15);
+INSERT INTO `whitelist` SELECT 16,'ds_task','/swagger-ui.html','admin','2022-11-21 06:26:50','admin','2022-12-08 16:19:00' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=16);
+INSERT INTO `whitelist` SELECT 17,'ds_task','/v2/api-docs','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:00' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=17);
+INSERT INTO `whitelist` SELECT 18,'ds_task','/systemuserinfo/expand/remote','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:00' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=18);
+INSERT INTO `whitelist` SELECT 19,'ds_task','/systemmenu/remote','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:00' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=19);
+INSERT INTO `whitelist` SELECT 20,'ds_task','/editor.worker.js','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:01' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=20);
+INSERT INTO `whitelist` SELECT 21,'ds_task','/ds_task/task/statushook','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:01' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=21);
+INSERT INTO `whitelist` SELECT 22,'ds_task','/ds_task/task/flinkstatushook','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:02' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=22);
+INSERT INTO `whitelist` SELECT 23,'ds_task','/ds_task/attachment/download*','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:02' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=23);
+INSERT INTO `whitelist` SELECT 24,'ds_task','/ds_task/task/backfill/process','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:02' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=24);
+INSERT INTO `whitelist` SELECT 25,'ds_task','/ds_task/ds/switch/newaccess','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:02' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=25);
+INSERT INTO `whitelist` SELECT 26,'ds_task','/ds_task/ds/userinfo/hook','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:03' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=26);
+INSERT INTO `whitelist` SELECT 27,'ds_task','/ds_task/task/batchCreateTask','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:03' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=27);
+INSERT INTO `whitelist` SELECT 28,'ds_task','/ds_task/feedback/acceptByDingding','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:03' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=28);
+INSERT INTO `whitelist` SELECT 29,'ds_task','/ds_task/feedback/assignByDingding','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:04' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=29);
+INSERT INTO `whitelist` SELECT 30,'ds_task','/sla-service/**','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:04' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=30);
+INSERT INTO `whitelist` SELECT 31,'ds_task','/ds_task/task/realtimeExecute','admin','2022-11-21 06:26:51','admin','2022-12-08 16:19:04' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=31);
+INSERT INTO `whitelist` SELECT 32,'ds_task','/ds_task/accessuser/login','admin','2022-12-02 19:41:22','admin','2022-12-16 11:17:18' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=32);
+INSERT INTO `whitelist` SELECT 33,'ds_task','/whitelist','admin','2022-12-02 23:04:20','admin','2022-12-08 16:19:05' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=33);
+INSERT INTO `whitelist` SELECT 34,'cost','/cost/stat/excel','admin','2022-12-12 17:00:26','admin','2022-12-15 11:28:46' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=34);
+INSERT INTO `whitelist` SELECT 35,'ds_task','/ds_task/accessuser/checkMFACode','admin','2022-12-16 11:21:17','admin','2022-12-16 11:21:17' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=35);
+INSERT INTO `whitelist` SELECT 36,'ds_task','/ds_task/accessuser/unbundlingMFA','admin','2022-12-16 11:21:17','admin','2022-12-16 11:21:17' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=36);
+INSERT INTO `whitelist` SELECT 37,'ds_task','/ds_task/accessuser/sendCode','admin','2022-12-16 11:21:18','admin','2022-12-16 11:21:18' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=37);
+INSERT INTO `whitelist` SELECT 38,'ds_task','/ds_task/accessuser/checkCode','admin','2022-12-16 11:21:18','admin','2022-12-16 11:21:18' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=38);
+INSERT INTO `whitelist` SELECT 39,'ds_task','/ds_task/accessuser/updatePassword','admin','2022-12-16 11:21:18','admin','2022-12-16 11:21:18' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=39);
+INSERT INTO `whitelist` SELECT 40,'gov','/gov/looker/excel','admin','2022-12-16 19:31:46','admin','2022-12-16 19:31:46' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=40);
+INSERT INTO `whitelist` SELECT 41,'storage','/storage/selectCongfigExcel','admin','2023-01-05 09:43:13','admin','2023-01-05 09:43:13' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=41);
+INSERT INTO `whitelist` SELECT 42,'storage','/storage/selectCongfigByPathExcel','admin','2023-01-05 09:43:32','admin','2023-01-05 09:43:32' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=42);
+INSERT INTO `whitelist` SELECT 43,'ds_task','/ds_task/tenant/list','admin','2023-01-11 08:25:30','admin','2023-01-11 08:25:30' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=43);
+INSERT INTO `whitelist` SELECT 44,'ds_task','/ds_task/artifactversion/download*','admin','2023-02-17 06:43:53','admin','2023-02-17 06:43:53' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=44);
+INSERT INTO `whitelist` SELECT 45,'ds_task','/ds_task/task/list','admin','2023-03-07 08:53:42','admin','2023-03-07 08:53:42' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=45);
+INSERT INTO `whitelist` SELECT 46,'gov','/gov/computing/checkUp/excel','admin','2023-03-15 08:04:08','admin','2023-03-15 08:04:08' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=46);
+INSERT INTO `whitelist` SELECT 47,'metadata','/metadata/auth/excel','admin','2023-03-15 08:04:15','admin','2023-03-15 08:04:15' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=47);
+INSERT INTO `whitelist` SELECT 48,'storage','/storage/excel ','admin','2023-03-28 08:58:03','admin','2023-03-28 08:58:03' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `whitelist` WHERE id=48);
+
+
+INSERT INTO `domain` SELECT 1,'ds_task','http://data-development','/ds_task','admin','2022-11-18 06:25:42','admin','2022-12-20 11:06:30' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `domain` WHERE id=1);
+INSERT INTO `domain` SELECT 2,'metadata','http://metadata-web','','admin','2022-11-18 06:25:43','admin','2022-12-29 10:44:23' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `domain` WHERE id=2);
+INSERT INTO `domain` SELECT 3,'pipeline','http://scheduler-webserver','','admin','2022-11-18 06:25:44','admin','2023-01-05 05:23:56' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `domain` WHERE id=3);
+INSERT INTO `domain` SELECT 4,'qe','http://query-editor','/qe','admin','2022-12-01 13:08:16','admin','2023-01-09 11:00:25' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `domain` WHERE id=4);
+INSERT INTO `domain` SELECT 5,'cluster-service','http://data-development','/cluster-service','admin','2022-12-01 19:58:16','admin','2023-07-25 10:01:10' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `domain` WHERE id=5);
+
+INSERT INTO `version` SELECT 1,'AJ+6wb9wHDmjqS/Wkwcj4A==','2023-08-14 11:50:47','2023-08-14 11:50:47' FROM DUAL WHERE NOT EXISTS (SELECT id FROM `version` WHERE id=1);
